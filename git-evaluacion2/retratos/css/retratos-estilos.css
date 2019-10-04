@@ -1,7 +1,7 @@
-.padre{
+.padre{                       /* contenedor*/
   background-color:  #000;
   display: flex;
-  -webkit-flex-flow: column;         /* la clave para centrar un div es usando una etiqueta  prinipal*/
+  -webkit-flex-flow: column;
   -ms-flex-flow:column;
   -o-flex-flow:column;
   font-family: 'Dancing Script';
@@ -23,7 +23,7 @@
     #retratos {
      text-decoration:none;
    }
-   .segundas {
+   .segundas {                                     /* contenedor*/
      text-align: center;
      background-color: #d5c75f;
      border-radius: 1px;
@@ -31,18 +31,18 @@
          .img img{
            box-shadow: 2px 2px 2px  #02010a;
          }
-         .img1, .img2, .img3, .img4, .img5, .img6 {padding: 4%;height: 200px;width: 100%;}
-         .img1 {filter: blur(10px);}
+         .img1, .img2, .img3, .img4, .img5, .img6 {padding: 4%;height: 200px;width: 100%;} /* contenedores*/
+         .img1 {filter: blur(10px);}  /* filtros*/
          .img2,.img6,.img4 {filter: grayscale(100%);}
          .img3 {filter: sepia(90%);}
-.footer{
+.footer{ /* pie de pagina*/
   padding-bottom: 4%;
 	width: 100%;
   background-color: #C6d5c5;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
    }
-   .contacto{
+   .contacto{  /* contenedor*/
      width: auto;
    }
      .contacto h1{text-align: left;
@@ -50,11 +50,11 @@
      .contacto  ol {list-style: none;text-align: left;
        padding-left:0%;
      }
-   .terminos{
+   .terminos{                /* contenedor*/
      width: auto;
    }
     .terminos h1{text-align: left;}
-   .social {
+   .social {                         /* contenedor*/
      width: auto;
    }
       .social a{text-decoration: none;color: black}
@@ -62,329 +62,328 @@
       max-width: 15px;
       height: 15px;
     }
-   .derechos{
+   .derechos{                     /* contenedor*/
      width: auto;
    }
       .derechos label{display: block;}
-            @media all and (min-width: 200px)
-            {
-              .padre{
-                -webkit-flex-flow: column;
-                justify-content: center;
-                align-items: center;
-              }
-                .contenido{
-                  width: 100%;
-                }
-                .menu{
-                  padding: 3%;
-                  align-items: center;
-                  display: flex;
-                  flex-flow: column;
-                }
-                .logo{
-                  width: 100%;
-                  text-align: center;
-                  padding: 2%;
-                }
-                  .logo h1{
-                    display: inline;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                  }
-              .nav{
-                width: 50%;
-                display: flex;
-                flex-flow: row;
-                justify-content: center;
-              }
-                .nav a{
-                  padding-left: 7%;
-                  font-size: 1.4em;
-                }
-              .segundas{
-                display:flex;
-                flex-flow: column;
-                justify-content: center;
-              }
-                  .img{
-                    align-items: center;
-                    display: flex;
-                    flex-flow: column;
-                  }
-                    .img img{
-                      width: 90%;
-                      height: 100%;
-                    }
+@media all and (min-width: 200px){
+  .padre{
+    -webkit-flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido{
+    width: 100%;
+  }
+  .menu{
+    padding: 3%;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+  .logo{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+  .logo h1{
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nav{
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  .nav a{
+    padding-left: 7%;
+    font-size: 1.4em;
+  }
+  .segundas{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .img{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+  .img img{
+    width: 90%;
+    height: 100%;
+  }
 
-                .footer{
-                  width: 92%;
-                  padding-top: 4%;
-                  padding-left: 8%;
-                  display: flex;
-                  flex-flow: column;
-                }
-            }
-            @media all and (min-width: 400px)
-            {
-              .padre{
-                -webkit-flex-flow: column;
-                justify-content: center;
-                align-items: center;
-              }
-                .contenido{
-                  width: 100%;
-                }
-                .menu{
-                  padding: 3%;
-                  align-items: center;
-                  display: flex;
-                  flex-flow: column;
-                }
-                .logo{
-                  text-align: center;
-                }
-                .logo{
-                  width: 100%;
-                  text-align: center;
-                  padding: 2%;
-                }
-                  .logo h1{
-                    display: inline;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                  }
-              .nav{
-                width: 50%;
-                display: flex;
-                flex-flow: row;
-                justify-content: center;
-              }
-                .nav a{
-                  padding-left: 7%;
-                  font-size: 1.4em;
-                }
-                .segundas{
-                  display:flex;
-                  -webkit-flex-flow:column;
-                  flex-flow: column;
-                  justify-content: center;
-                }
-                    .img{
-                      align-items: center;
-                      display: flex;
-                      -webkit-flex-flow:column;
-                      flex-flow: column;
-                    }
-                      .img img{
-                        width: 90%;
-                        height: 100%;
-                      }
-                      .img1, .img2, .img3, .img4, .img5, .img6{width: 100%;padding: 4%;height: 340px;
-                      }
-                .footer{
-                  width: 92%;
-                  padding-top: 4%;
-                  padding-left: 8%;
-                  display: flex;
-                  flex-flow: column;
-                }
-            }
-            @media all and (min-width: 550px)
-            {
-              .padre{
-                -webkit-flex-flow: column;
-                justify-content: center;
-                align-items: center;
-              }
-                .contenido{
-                  width: 100%;
-                }
-                .menu{
-                  padding: 3%;
-                  align-items: center;
-                  display: flex;
-                  flex-flow: column;
-                }
-                .logo{
-                  width: 100%;
-                  text-align: center;
-                  padding: 2%;
-                }
-                  .logo h1{
-                    display: inline;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                  }
-              .nav{
-                width: 50%;
-                display: flex;
-                flex-flow: row;
-                justify-content: center;
-              }
-                .nav a{
-                  padding-left: 7%;
-                  font-size: 1.4em;
-                }
-                .segundas{
-                  display:flex;
-                  flex-flow: column;
-                  justify-content: center;
-                }
-                    .img{
-                      align-items: center;
-                      display: flex;
-                      flex-flow: column;
-                    }
-                      .img img{
-                        width: 90%;
-                        height: 100%;
-                      }
-                      .img1, .img2, .img3, .img4, .img5, .img6{padding: 4%;height: 450px;width: 100%;}
-                .footer{
-                  width: 92%;
-                  padding-top: 4%;
-                  padding-left: 8%;
-                  display: flex;
-                  flex-flow: column;
-                }
-                @media all and (min-width: 650px)
-                {
-                  .padre{
-                    -webkit-flex-flow: column;
-                    justify-content: center;
-                    align-items: center;
-                  }
-                    .contenido{
-                      width: 100%;
-                    }
-                    .menu{
-                      padding: 3%;
-                      align-items: center;
-                      display: flex;
-                      flex-flow: column;
-                    }
-                    .logo{
-                      width: 100%;
-                      text-align: center;
-                      padding: 2%;
-                    }
-                      .logo h1{
-                        display: inline;
-                        margin-top: auto;
-                        margin-bottom: auto;
-                      }
-                  .nav{
-                    width: 50%;
-                    display: flex;
-                    flex-flow: row;
-                    justify-content: center;
-                  }
-                    .nav a{
-                      padding-left: 7%;
-                      font-size: 1.4em;
-                    }
-                    .segundas{
-                      display:flex;
-                      flex-flow: column;
-                      justify-content: center;
-                    }
-                        .img{
-                          align-items: center;
-                          display: flex;
-                          flex-flow: column;
-                        }
-                          .img img{
-                            width: 90%;
-                            height: 100%;
-                          }
-                          .img1, .img2, .img3, .img4, .img5, .img6{padding: 4%;height: 600px;width: 100%;}
-                    .footer{
-                      width: 92%;
-                      padding-top: 4%;
-                      padding-left: 8%;
-                      display: flex;
-                      flex-flow: column;
-                    }
-       @media all and (min-width:900px) {
-         .padre{
-           -webkit-flex-flow: column;
-           justify-content: center;
-           align-items: center;
-         }
-         .contenido{
-           width: 900px;
-         }
-         .menu{
-           padding-left: 0%;
-           padding-right: 0%;
-           padding-top: 3%;
-           padding-bottom: 3%;
-           align-items: center;
-           display: flex;
-           flex-flow: nowrap;
-         }
-         .logo{
-           padding: 0px;
-           width: 400px;
-           text-align: center;
-         }
-           .logo h1{
-             display: inline;
-             margin-top: auto;
-             margin-bottom: auto;
-           }
-       .nav{
-         width: 490px;
-         display: inline;
-         text-align: right;
-       }
-         .nav a{
-           padding-left: 7%;
-           font-size: 1.4em;
-         }
-         .segundas{
-           flex-flow: nowrap;
-           display: flex;
-           justify-content: center;
-         }
-         .img{
-           align-items: center;
-           padding: 1%;
-           width: 100%;
-           height: 100%;
-           display: flex;
-           flex-flow: wrap;
-         }
-         .img img{
-           width: 100%;
-           height: 100%;
-         }
-         .img1, .img2, .img3, .img4, .img5, .img6{padding-top: 24px;padding-bottom:24px;
-           padding-left: 35px;padding-right: 35px;height: 140px;width: 220px;}
-      .footer{
-           height: 150px;
-           padding: 0px;
-           flex-flow: nowrap;
-           width: 900px;
-           display: flex;
-         }
-          .footer h1{
-            margin-bottom: 0px;
-          }
-            .footer ol{
-              margin-top: 0px;
-            }
-         .contacto{
-           padding-left: 2%;
-           width: 25%;
-         }
-         .terminos{
-           width: 25%;
-         }
-         .social{
-           width: 25%;
-         }
-         .derechos{
-           width: 25%;
-         }
+  .footer{
+    width: 92%;
+    padding-top: 4%;
+    padding-left: 8%;
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media all and (min-width: 400px)
+{
+  .padre{
+    -webkit-flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido{
+    width: 100%;
+  }
+  .menu{
+    padding: 3%;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+  .logo{
+    text-align: center;
+  }
+  .logo{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+  .logo h1{
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nav{
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  .nav a{
+    padding-left: 7%;
+    font-size: 1.4em;
+  }
+  .segundas{
+    display:flex;
+    -webkit-flex-flow:column;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .img{
+    align-items: center;
+    display: flex;
+    -webkit-flex-flow:column;
+    flex-flow: column;
+  }
+  .img img{
+    width: 90%;
+    height: 100%;
+  }
+  .img1, .img2, .img3, .img4, .img5, .img6{width: 100%;padding: 4%;height: 340px;
+  }
+  .footer{
+    width: 92%;
+    padding-top: 4%;
+    padding-left: 8%;
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media all and (min-width: 550px)
+{
+  .padre{
+    -webkit-flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido{
+    width: 100%;
+  }
+  .menu{
+    padding: 3%;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+  .logo{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+  .logo h1{
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nav{
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  .nav a{
+    padding-left: 7%;
+    font-size: 1.4em;
+  }
+  .segundas{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .img{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+  .img img{
+    width: 90%;
+    height: 100%;
+  }
+  .img1, .img2, .img3, .img4, .img5, .img6{padding: 4%;height: 450px;width: 100%;}
+  .footer{
+    width: 92%;
+    padding-top: 4%;
+    padding-left: 8%;
+    display: flex;
+    flex-flow: column;
+  }
+  @media all and (min-width: 650px)
+  {
+    .padre{
+      -webkit-flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .contenido{
+      width: 100%;
+    }
+    .menu{
+      padding: 3%;
+      align-items: center;
+      display: flex;
+      flex-flow: column;
+    }
+    .logo{
+      width: 100%;
+      text-align: center;
+      padding: 2%;
+    }
+    .logo h1{
+      display: inline;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .nav{
+      width: 50%;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+    }
+    .nav a{
+      padding-left: 7%;
+      font-size: 1.4em;
+    }
+    .segundas{
+      display:flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+    .img{
+      align-items: center;
+      display: flex;
+      flex-flow: column;
+    }
+    .img img{
+      width: 90%;
+      height: 100%;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6{padding: 4%;height: 600px;width: 100%;}
+    .footer{
+      width: 92%;
+      padding-top: 4%;
+      padding-left: 8%;
+      display: flex;
+      flex-flow: column;
+    }
+    @media all and (min-width:900px) {
+      .padre{
+        -webkit-flex-flow: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contenido{
+        width: 900px;
+      }
+      .menu{
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        align-items: center;
+        display: flex;
+        flex-flow: nowrap;
+      }
+      .logo{
+        padding: 0px;
+        width: 400px;
+        text-align: center;
+      }
+      .logo h1{
+        display: inline;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      .nav{
+        width: 490px;
+        display: inline;
+        text-align: right;
+      }
+      .nav a{
+        padding-left: 7%;
+        font-size: 1.4em;
+      }
+      .segundas{
+        flex-flow: nowrap;
+        display: flex;
+        justify-content: center;
+      }
+      .img{
+        align-items: center;
+        padding: 1%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: wrap;
+      }
+      .img img{
+        width: 100%;
+        height: 100%;
+      }
+      .img1, .img2, .img3, .img4, .img5, .img6{padding-top: 24px;padding-bottom:24px;
+        padding-left: 35px;padding-right: 35px;height: 140px;width: 220px;}
+        .footer{
+          height: 150px;
+          padding: 0px;
+          flex-flow: nowrap;
+          width: 900px;
+          display: flex;
+        }
+        .footer h1{
+          margin-bottom: 0px;
+        }
+        .footer ol{
+          margin-top: 0px;
+        }
+        .contacto{
+          padding-left: 2%;
+          width: 25%;
+        }
+        .terminos{
+          width: 25%;
+        }
+        .social{
+          width: 25%;
+        }
+        .derechos{
+          width: 25%;
+        }
